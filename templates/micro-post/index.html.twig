@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <small class="d-block text-right mt-3">
+        <a href="{{path('micro_post_add')}}">Add New</a>
+    </small>
+    {% for post in posts %}
+
+        <a href="{{ path('micro_post_post',{'id': post.id}) }}">
+
+            {{ include('micro-post/raw-post.html.twig' , {'post': post}) }}
+            <small class="d-block text-right mt-3">
+                {% if is_granted('edit',post) %}
+                <a href="{{path('micro_post_edit',{'id':post.id})}}">Edit</a>
+                {% endif %}
+            </small>
+
+
+        </a>
+
+    {% endfor %}
+
+{% endblock %}
