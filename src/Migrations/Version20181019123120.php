@@ -19,7 +19,7 @@ final class Version20181019123120 extends AbstractMigration
         $this->addSql('ALTER TABLE notifications ADD CONSTRAINT FK_6000B0D3A76ED395 FOREIGN KEY (user_id) REFERENCES user (id)');
         $this->addSql('ALTER TABLE notifications ADD CONSTRAINT FK_6000B0D311E37CEA FOREIGN KEY (micro_post_id) REFERENCES micro_post (id)');
         $this->addSql('ALTER TABLE notifications ADD CONSTRAINT FK_6000B0D3B4622EC2 FOREIGN KEY (liked_by_id) REFERENCES user (id)');
-        $this->addSql('DROP TABLE micro_post_backup');
+
     }
 
     public function down(Schema $schema) : void
@@ -27,7 +27,6 @@ final class Version20181019123120 extends AbstractMigration
         // this down() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'mysql', 'Migration can only be executed safely on \'mysql\'.');
 
-        $this->addSql('CREATE TABLE micro_post_backup (id INT AUTO_INCREMENT NOT NULL, text VARCHAR(280) NOT NULL COLLATE utf8mb4_unicode_ci, time DATETIME NOT NULL, user_id INT NOT NULL, INDEX IDX_2AEFE017A76ED395 (user_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB');
         $this->addSql('DROP TABLE notifications');
     }
 }
