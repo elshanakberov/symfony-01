@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47e2ea2d-98f7-4331-8755-3d5d8bfd4c4f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.circelci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circelci/config.yml" afterDir="false" />
-    </list>
+    <list default="true" id="47e2ea2d-98f7-4331-8755-3d5d8bfd4c4f" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -491,12 +489,12 @@
       <workItem from="1543776795636" duration="3773000" />
       <workItem from="1544352517918" duration="8102000" />
       <workItem from="1544715938128" duration="25000" />
-      <workItem from="1546161981498" duration="4009000" />
+      <workItem from="1546161981498" duration="4438000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222259000" />
+    <option name="totallyTimeSpent" value="222688000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="752" extended-state="6" />
