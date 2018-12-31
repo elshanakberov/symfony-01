@@ -10,7 +10,7 @@ jobs:
              MAILER_FROM: null://localhost
         - image: circleci/mysql:5.7
           environment:
-            MYSQL_ROOT_PASSWORD: ''
+            MYSQL_ROOT_PASSWORD: 'root'
             MYSQL_DATABASE: symfony-01
     steps:
         - checkout
