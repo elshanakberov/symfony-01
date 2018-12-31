@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/micropost
+    working_directory: ~/symfony-01
     docker:
         - image: circleci/php:7.2.4-apache-stretch-node-browsers
         environment:
@@ -11,7 +11,7 @@ jobs:
         - image: circleci/mysql:5.7
           environment:
             MYSQL_ROOT_PASSWORD: ''
-            MYSQL_DATABASE: micro-post
+            MYSQL_DATABASE: symfony-01
 
     steps:
         - checkout
