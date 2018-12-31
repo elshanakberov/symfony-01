@@ -8,7 +8,7 @@ jobs:
              APP_ENV: test
              DATABASE_URL: mysql://root:root@127.0.0.1/symfony-01
              MAILER_FROM: null://localhost
-        - image: .circleci/mysql:5.7
+        - image: circleci/mysql:5.7
           environment:
             MYSQL_ROOT_PASSWORD: ''
             MYSQL_DATABASE: symfony-01
