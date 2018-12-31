@@ -4,15 +4,14 @@ jobs:
     working_directory: ~/symfony-01
     docker:
         - image: circleci/php:7.2.4-apache-stretch-node-browsers
-        environment:
-           APP_ENV: test
-           DATABASE_URL: mysql://root:root@127.0.0.1/symfony-01
-           MAILER_FROM: null://localhost
+          environment:
+             APP_ENV: test
+             DATABASE_URL: mysql://root:root@127.0.0.1/symfony-01
+             MAILER_FROM: null://localhost
         - image: .circleci/mysql:5.7
           environment:
             MYSQL_ROOT_PASSWORD: ''
             MYSQL_DATABASE: symfony-01
-
     steps:
         - checkout
         - run:
