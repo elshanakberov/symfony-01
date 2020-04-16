@@ -2227,9 +2227,9 @@ hmac-drbg@^1.0.0:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.1"
 
-holderjs@^2.9.4:
-  version "2.9.4"
-  resolved "https://registry.yarnpkg.com/holderjs/-/holderjs-2.9.4.tgz#a165dbc2532ebff975491312259d0c520c059898"
+holderjs@^2.9.7:
+  version "2.9.7"
+  resolved "https://registry.yarnpkg.com/holderjs/-/holderjs-2.9.7.tgz#1b1fd371082bb252fc2e5b2559cd9074bfb11d9d"
   dependencies:
     shaven "^0.8.1"
 
